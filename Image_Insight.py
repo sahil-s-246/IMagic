@@ -6,6 +6,9 @@ import requests
 
 st.title("IMagic Insight")
 
+"Harness the power of the Gemini Flash API to effortlessly extract and analyze text from images. " \
+    "This feature is perfect for digitizing documents, extracting information from photos, and much more."
+
 
 def get_img(file="images/example.jpg", overlay=True, language='eng'):
     data = {
@@ -39,4 +42,3 @@ if image:
         obj = gTTS(text=response.text, lang="en", slow=False)
         obj.save("insight.mp3")
         st.audio("insight.mp3")
-

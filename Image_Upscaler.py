@@ -1,6 +1,4 @@
 import streamlit as st
-
-import os
 import io
 import warnings
 from PIL import Image
@@ -13,6 +11,10 @@ stability_api = client.StabilityInference(
                                        # Available Upscaling Engines: esrgan-v1-x2plus
     verbose=True, # Print debug messages.
 )
+st.title("IMagic Upscaler")
+"Enhance your images with Stable Diffusion's upscaling tools, leveraging Stable Diffusion to increase resolution and " \
+    "improve quality. "
+
 upload = st.file_uploader("Upload your image to be upscaled here",type=['png', 'jpg', 'jpeg', 'svg'])
 st.info("Please upload an Image to be upscaled")
 if upload:

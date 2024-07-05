@@ -7,6 +7,10 @@ API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion
 headers = {"Authorization": st.secrets["general"]["hftoken"]}
 
 st.title("IMagic Generation using stable diffusion")
+
+"Create stunning and unique images Stable Diffusion's AI-powered image generation tools. Input any prompt and " \
+    "generate high-quality images that match your descriptions. Whether you're seeking artistic inspiration or " \
+    "generating visuals for projects, Image Generator has you covered. "
 prompt = st.text_area("Describe the image here")
 
 
