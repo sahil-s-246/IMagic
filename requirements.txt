@@ -102,7 +102,7 @@ keras==3.3.3
 kiwisolver==1.4.5
 libclang==18.1.1
 manim==0.18.1
-ManimPango==0.5.0
+ManimPango
 mapbox-earcut==1.0.1
 Markdown==3.6
 markdown-it-py==3.0.0
@@ -153,7 +153,7 @@ pure-eval==0.2.2
 pyarrow==15.0.0
 pyasn1==0.5.1
 pyasn1-modules==0.3.0
-pycairo==1.26.1
+pycairo
 pycparser==2.21
 pydantic==2.8.0
 pydantic_core==2.20.0
