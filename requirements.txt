@@ -208,8 +208,8 @@ tbb==2021.13.0
 tenacity==8.2.3
 tensorboard==2.16.2
 tensorboard-data-server==0.7.2
-tensorflow==2.16.2
-tensorflow-intel==2.16.2
+tensorflow
+tensorflow-intel
 termcolor==2.4.0
 terminado==0.18.0
 threadpoolctl==3.2.0
