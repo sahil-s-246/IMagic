@@ -169,7 +169,7 @@ python-engineio==4.9.1
 python-json-logger==2.0.7
 python-multipart==0.0.9
 python-socketio==5.11.3
-pytz==2023.3.post1
+pytz
 pywin32
 pywinpty==2.0.12
 PyYAML==6.0.1
