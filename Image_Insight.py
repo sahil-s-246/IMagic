@@ -4,7 +4,7 @@ import PIL.Image
 from gtts import gTTS
 import requests
 
-st.title("IMAgic Insight")
+st.title("IMagic Insight")
 
 
 def get_img(file="images/example.jpg", overlay=True, language='eng'):
