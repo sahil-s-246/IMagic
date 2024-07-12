@@ -5,3 +5,5 @@ pillow
 google
 requests
 gtts
+svgwrite
+pdf2image
