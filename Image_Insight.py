@@ -13,7 +13,7 @@ st.title("IMagic Insight")
 def get_img(file="images/example.jpg", overlay=True, language='eng'):
     data = {
         'isOverlayRequired': overlay,
-        'apikey': st.secrets["general"]["ocrspace"],
+        'apikey': "K83065144088957",
         'language': language,
         'isCreateSearchablePdf': True,
         'OCREngine': 2
