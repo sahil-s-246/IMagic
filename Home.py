@@ -27,7 +27,13 @@ Reduce file sizes with the K-means clustering algorithm-based compression featur
 
 Enhance your images with Stable Diffusion's upscaling tools, leveraging Stable Diffusion to increase resolution and improve quality.
     
-    
+## Image Format Convertor:    
+
+Convert your images to PDF using image2pdf library
+
+## Image Background Remover:
+
+Remove Image Backgrounds using rembg library
 
 
 """

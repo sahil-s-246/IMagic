@@ -1,3 +1,6 @@
 *.toml
 *.mp3
 output images
+*.jpg
+*.png
+*.zip

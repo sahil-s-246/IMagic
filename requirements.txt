@@ -7,3 +7,4 @@ requests
 gtts
 svgwrite
 pdf2image
+rembg

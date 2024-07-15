@@ -5,5 +5,6 @@ pg = st.navigation([st.Page("Home.py"),
                     st.Page("Image_Generator.py"),
                     st.Page("Image_Upscaler.py"),
                     st.Page("Image Format Conversion.py"),
-                    st.Page("Image_Compression.py")])
+                    st.Page("Image_Compression.py"),
+                    st.Page("Image_Background_Remover.py")])
 pg.run()

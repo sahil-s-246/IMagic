@@ -23,7 +23,7 @@ def image_to_svg(image_path, output_path):
 
 # Function to convert PDF to images
 def pdf_to_image(pdf_path, output_folder):
-    pages = convert_from_bytes(pdf_path, 300,fmt="png")  # 300 DPI resolution
+    pages = convert_from_bytes(pdf_path, 300, fmt="png")  # 300 DPI resolution
     for i, page in enumerate(pages):
         page.save(f'{output_folder}/page_{i}.png', 'PNG')
 
@@ -31,7 +31,7 @@ def pdf_to_image(pdf_path, output_folder):
 st.title('Imagic - Image Format Converter')
 
 st.info("Image includes formats 'png', 'jpg', 'jpeg")
-option = st.selectbox('Select Conversion Option', ('Image to PDF', 'Image to SVG', 'PDF to Image'))
+option = st.selectbox('Select Conversion Option', ('Image to PDF', '1Image to SVG', 'PDF to Image'))
 
 if option == 'Image to PDF':
     uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
@@ -47,30 +47,30 @@ if option == 'Image to PDF':
                                data=PDFbyte,
                                file_name=f"{file_name}.pdf",
                                mime='application/octet-stream')
+else:
+    st.write("WIP⚒")
+# todo work on svg
+# elif option == 'Image to SVG':
+#     uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
+#     if uploaded_file:
+#         st.image(uploaded_file, caption='Uploaded Image', use_column_width=True)
+#         if st.button('Convert to SVG'):
+#             image_to_svg(uploaded_file, 'output.svg')
+#             st.success('Conversion successful. Click to download.')
+#             st.download_button(label='Download SVG', data='output.svg')
+# todo images are not being generated properly
+# elif option == 'PDF to Image':
+#     uploaded_file = st.file_uploader('Upload a PDF file', type=['pdf'])
+#     if uploaded_file:
+#         if st.button('Convert to Image'):
+#             pdf_to_image(uploaded_file.getvalue(), 'output images')
+#             st.success('Conversion successful. Images saved in "output_images" folder.')
+#             shutil.make_archive("result", 'zip', "output images")
+#             with open("result.zip", "rb") as fp:
+#                 btn = st.download_button(
+#                     label="Download",
+#                     data=fp,
+#                     file_name="result.zip",
+#                 )
 
-
-elif option == 'Image to SVG':
-    uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
-    if uploaded_file:
-        st.image(uploaded_file, caption='Uploaded Image', use_column_width=True)
-        if st.button('Convert to SVG'):
-            image_to_svg(uploaded_file, 'output.svg')
-            st.success('Conversion successful. Click to download.')
-            st.download_button(label='Download SVG', data='output.svg')
-
-elif option == 'PDF to Image':
-    uploaded_file = st.file_uploader('Upload a PDF file', type=['pdf'])
-    if uploaded_file:
-        if st.button('Convert to Image'):
-            pdf_to_image(uploaded_file.getvalue(), 'output images')
-            st.success('Conversion successful. Images saved in "output_images" folder.')
-            shutil.make_archive("result", 'zip', "output images")
-            with open("result.zip", "rb") as fp:
-                btn = st.download_button(
-                    label="Download",
-                    data=fp,
-                    file_name="result.zip",
-                )
-
-
-
+# TODO
