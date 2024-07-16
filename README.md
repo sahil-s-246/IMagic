@@ -1,5 +1,5 @@
 # IMagic
-
+[imagic.streamlit.app](https://imagic.streamlit.app)
  
 
 **Work in Progress**
