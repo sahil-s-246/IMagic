@@ -32,7 +32,8 @@ Convert your images to pdf to using pdf2image
 
 Remove background images using rembg
 
-To install:
+--- 
+## Steps to Install
 
 - Go your project's directory
 - Clone Repo
@@ -54,4 +55,22 @@ Req_API_Key = st.secrets["general"]["Req_API"]
 ```
 streamlit run streamlit_app.py --server.port 8081
 ```
+---
+## Image Insights on CLI
+- Create a ```val.cfg``` file. Create a section [Api] and your API as a key value pair
+```
+[Api]
+gemini:<API_KEY>
+```
+- Open your terminal in the project directory
+
+```
+pip install .
+```
+- Get insights by providing the path of the image
+```
+imagic -i <Example.jpg>
+```
+
+
 
