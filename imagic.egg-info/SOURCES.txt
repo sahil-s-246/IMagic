@@ -1,0 +1,9 @@
+README.md
+imagic.py
+setup.py
+imagic.egg-info/PKG-INFO
+imagic.egg-info/SOURCES.txt
+imagic.egg-info/dependency_links.txt
+imagic.egg-info/entry_points.txt
+imagic.egg-info/requires.txt
+imagic.egg-info/top_level.txt

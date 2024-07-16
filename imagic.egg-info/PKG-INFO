@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: imagic
+Version: 0.1.2
+Requires-Dist: rich
+Requires-Dist: google
+Requires-Dist: pillow

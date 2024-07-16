@@ -8,3 +8,5 @@ gtts
 svgwrite
 pdf2image
 rembg
+rich
+onnxruntime

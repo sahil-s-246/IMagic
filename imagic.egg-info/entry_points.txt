@@ -1,0 +1,2 @@
+[console_scripts]
+imagic = imagic:main
