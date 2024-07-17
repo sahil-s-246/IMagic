@@ -31,7 +31,7 @@ def pdf_to_image(pdf_path, output_folder):
 st.title('Imagic - Image Format Converter')
 
 st.info("Image includes formats 'png', 'jpg', 'jpeg")
-option = st.selectbox('Select Conversion Option', ('Image to PDF', '1Image to SVG', 'PDF to Image'))
+option = st.selectbox('Select Conversion Option', ('Image to PDF', 'Image to SVG', 'PDF to Image'))
 
 if option == 'Image to PDF':
     uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
