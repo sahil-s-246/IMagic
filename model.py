@@ -21,11 +21,12 @@ def combine_flattened_images(image_paths):
     return np.vstack(combined_data)
 
 
-image_paths = glob.glob("images/*.jpg")[:10]
-combined_data = combine_flattened_images(image_paths)
+if __name__ == "main":
+    image_paths = glob.glob("images/*.jpg")[:10]
+    combined_data = combine_flattened_images(image_paths)
 
-# Fit K-means on the combined pixel data
-n_clusters = 16  # Number of colors for compression
-kmeans = KMeans(n_clusters=n_clusters, random_state=42)
-kmeans.fit(combined_data)
-joblib.dump(kmeans, "kmeans_model.pkl")
+    # Fit K-means on the combined pixel data
+    n_clusters = 16  # Number of colors for compression
+    kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+    kmeans.fit(combined_data)
+    joblib.dump(kmeans, "kmeans_model.pkl")
