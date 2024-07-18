@@ -21,7 +21,7 @@ def combine_flattened_images(image_paths):
     return np.vstack(combined_data)
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     image_paths = glob.glob("images/*.jpg")[:10]
     combined_data = combine_flattened_images(image_paths)
 
