@@ -4,8 +4,7 @@ import io
 from PIL import Image
 
 st.title("IMagic Background Remover")
-"Enhance your images with Stable Diffusion's upscaling tools, leveraging Stable Diffusion to increase resolution and " \
-    "improve quality. "
+"Remove background using rembg "
 
 upload = st.file_uploader("Upload your image here",type=['png', 'jpg', 'jpeg', 'svg'])
 st.info("Please upload an Image to be whose bg is to be removed")

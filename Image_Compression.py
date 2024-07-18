@@ -34,3 +34,4 @@ if img:
         st.info(
             "Low Quality utilizes a trained model while High Quality refers to the fitting of the model "
             "on the image data")
+# todo PNG, more clusters

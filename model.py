@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 import glob
 import joblib
 
-
+# Images downloaded from Pixabay
 def load_and_flatten_image(image_path):
     image = Image.open(image_path)
     image = image.convert("RGB")
